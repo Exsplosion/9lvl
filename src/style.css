@@ -2,127 +2,119 @@ html {
     font-family: "Roboto-Black";
     box-sizing: border-box;
 }
-/* header {
-    background-color: orangered;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 98%;
-    height: 150px;
-    margin-left: 10px;
-}
-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 400px;
-}
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0px 10px;
-    width: 33%;
-    height: 400px;
-}
-.big_one {
-    background-color: orange;
+header {
+    background-color:crimson;
     width: 100%;
     height: 150px;
-    margin: 10px 0px;
 }
-.little_one {
-    background-color: orange;
-    width: 100%;
-    height: 25px;
-    margin: 10px 0px;
+.one {
+    background-color:crimson;
+    width: 67%;
+    height: 150px;
+    margin: 10px 0;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    header {
-        background-color: orangered;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 94.5%;
-        height: 150px;
-        margin-left: 10px;
-    }
-    section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 400px;
-    }
-    .column:first-child {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0px 10px;
-        width: 120%;
-        height: 400px;
-    }
-    .column:not(:first-child) {
-        display: none;
-    }
-    .big_one {
-        background-color: orange;
-        width: 100%;
-        height: 150px;
-        margin: 10px 0px;
-    }
-    .little_one {
-        background-color: orange;
-        width: 100%;
-        height: 25px;
-        margin: 10px 0px;
-    }
+.two {
+    background-color:crimson;
+    width: calc(66% / 2);
+    height: 150px;
+    margin: 10px 5px 10px 0;
+}
+.three {
+    background-color:crimson;
+    width: calc(66% / 2);
+    height: 150px;
+    margin: 10px 0px 10px 5px;
+}
+.tt {
+    flex-wrap: wrap;
+}
+.teta {
+    display: flex;
+    flex-direction: row;
+}
+.fo {
+    background-color:crimson;
+    width: 32%;
+    height: 320px;
+    margin: 10px;
+    top: 160px;
+    left: 67%;
+    position: absolute;
 }
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    header {
-        background-color: orangered;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 94.5%;
-        height: 150px;
-        margin-left: 10px;
-    }
-    section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 97%;
-        height: 400px;
-    }
-    .column:not(:last-child) {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0px 10px;
-        width: 50%;
-        height: 400px;
-    }
-    .column:last-child {
-        display: none;
-    }
-    .big_one {
-        background-color: orange;
+    .two {
+        background-color:crimson;
         width: 100%;
         height: 150px;
-        margin: 10px 0px;
+        margin: 0;
     }
-    .little_one {
-        background-color: orange;
+    .three {
+        background-color:crimson;
         width: 100%;
-        height: 25px;
-        margin: 10px 0px;
+        height: 150px;
+        margin: 0;
+    }
+    .one {
+        background-color:crimson;
+        width: 33%;
+        height: 150px;
+    }
+    .fo {
+        background-color:crimson;
+        width: 100%;
+        margin: 0;
+        height: 150px;
+        position:unset;
+    }
+    .tt {
+        flex-wrap: nowrap;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .teta {
+        gap: 10px;
+        width: calc(66% - 5px);
+        display: flex;
+        align-items: center;
     }
 }
-@media only screen and (min-device-width : 1024px) {
-
-} */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .one {
+        background-color:crimson;
+        width: 100%;
+        height: 150px;
+        margin: 10px 0;
+    }
+    .two {
+        background-color:crimson;
+        width: 50%;
+        height: 150px;
+        margin: 10px 5px 10px 0;
+    }
+    .three {
+        background-color:crimson;
+        width: 50%;
+        height: 150px;
+        margin: 10px 0px 10px 5px;
+    }
+    .tt {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .teta {
+        display: flex;
+        flex-direction: row;
+    }
+    .fo {
+        background-color:crimson;
+        width: 100%;
+        height: 320px;
+        position: unset;
+        margin: 0;
+    }
+}
 @font-face {
     font-family: "Roboto-Black";
     src: url("Roboto-Black.ttf") format("truetype");
